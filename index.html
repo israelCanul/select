@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-data">
+        <label for="" class="title">Select</label>
+        <div class="elementoantes"></div>
+        <select class="select perrito" name="select" id=""></select>
+        <div class="elementodespues"></div>
+        <!-- <span class="material-icons"> keyboard_arrow_down </span> -->
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
+    <script src="index.js"></script>
+
+    <script>
+      console.log("asd");
+      window.onload = init;
+      function init() {
+        document.querySelector(".select").select({
+          items: ["Opcion 1", { item: "perrito" }],
+        });
+      }
+    </script>
+  </body>
+</html>
