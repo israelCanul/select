@@ -14,9 +14,9 @@
     <div class="container">
       <div class="form-data">
         <label for="" class="title">Select</label>
-        <div class="elementoantes"></div>
+        <div class="elementoantes">aa</div>
         <select class="select perrito" name="select" id=""></select>
-        <div class="elementodespues"></div>
+        <div class="elementodespues">dd</div>
         <!-- <span class="material-icons"> keyboard_arrow_down </span> -->
       </div>
     </div>
@@ -28,7 +28,17 @@
       window.onload = init;
       function init() {
         document.querySelector(".select").select({
-          items: ["Opcion 1", { item: "perrito" }],
+          items: [
+            "Opcion 1",
+            "Opcion 2",
+            "Opcion 3",
+            "Opcion 4",
+            "Opcion 5",
+            "Opcion 3",
+            "Opcion 4",
+            "Opcion 5",
+            { item: "perrito" },
+          ],
         });
       }
     </script>
