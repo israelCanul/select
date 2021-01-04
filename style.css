@@ -49,16 +49,33 @@
 .select-wrapperItems {
   position: relative;
   width: calc(100% - 2px);
-  height: auto;
-  max-height: 200px;
-  /* background-color: yellow; */
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+  -webkit-transition: height 0.5s ease-in-out;
+  -moz-transition: height 0.5s ease-in-out;
+  -ms-transition: height 0.5s ease-in-out;
+  -o-transition: height 0.5s ease-in-out;
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
   border-top: 0px;
-  overflow-y: scroll;
+  max-height: 200px;
+}
+.select-wrapperItems.transition {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.select-wrapperItems.active {
+  overflow-y: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .options {
   padding: 5px 0px;
   box-sizing: border-box;
+
+  /* prueba */
+  width: calc(100% + 40px);
+  overflow-y: scroll;
+  height: 100%;
+  position: relative;
 }
 .options-option {
   margin: 2px 0px;
